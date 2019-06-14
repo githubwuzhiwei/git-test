@@ -11,8 +11,8 @@ public class ItemsServiceImpl implements ItemsService {
     @Autowired
     private ItemsDao itemsDao;
 
-    public Items findById(int id) {
-        Items item = itemsDao.findById();
+    public Items findById(Integer id) {
+        Items item = itemsDao.findById(id);
         return item;
     }
 }
